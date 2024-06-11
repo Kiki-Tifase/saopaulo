@@ -1,155 +1,200 @@
-*{
-    outline: 1px   ;
+* {
+  outline: red 1px;
 }
 
 body {
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    background-color: white;
-}
-.navsquare {
-    text-align:center;
-    height: 100px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  background-color: white;
+  box-sizing: border-box;
 }
 
-.menu {
-    background-color: #CCD5AE;
-    width:300px;
+.nav-bar ol {
+  list-style-type: none;
 }
 
-.navigation{
-    background-color: #E9EDC9;
-    display: flex;
-    height: 100px;
-    justify-content: space-between;
-    margin: 0;
-    padding: 0;
-    width: 100%;
+.nav-square-left {
+  text-align: center;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.navbar ol{
-    list-style-type: none;
+.nav-text-menu {
+  background-color: #283618;
+  width: 300px;
+  color: white;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 25px;
 }
 
-.rio {
-    width: 100%;
-    background-image: url("brazilbg.jpeg");
-    height: 1240px;
+.nav-navigation {
+  background-color: beige;
+  display: flex;
+  height: 100px;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
+  width: 100%;
 }
 
-.riotxt {
-    position: relative;
-    text-align: center;
-    color: white;
+.nav-text-contact {
+  color: #283618;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 5ch;
 }
 
-.overtxt {
-    width: 900px;
-    height: 450px;
-    background-color: #283618;
-    position: absolute;
-    bottom: 100px;
-    left: 160px;
-    opacity: 70%;
-    font-size: larger;
-}
-.start {
-    width: 100%;
-    text-align: center;
-    padding-top: 100px;
-    font-size: 30px;
-    color: red;
-}
-.boxesdiv {
-    justify-content: space-around;
-    display: inline flex;
-    max-height: none;
-    align-items: center;
-    width: 100%;
+.icon {
+  height: 70%;
+  padding: 15px;
 }
 
-.ourtitle {
-    display: flex;
-    justify-content: space-;
-    text-align: center;
-    font-size:35px;
-
+.nav-divider {
+  border-left: 3px solid black;
+  margin-left: 20px;
 }
 
-.ourimage {
-    display: flex;
-    justify-content: space-around;
-    text-align:  center;
-    width: 500px;
-    height: 800px; 
-    background-image: url("brazilbg.jpeg");
-
-}
-.food,
-.hotel,
-.art,
-.city {
-    background-repeat: no-repeat;
-    background-size: cover;
-    margin: 0px;
-    border-radius: 30px;
+.header-overlay {
+  position: relative;
+  text-align: center;
+  color: white;
 }
 
-.food {
-    background-image: url("victoria-shes-UC0HZdUitWY-unsplash.jpg");
+.header-overlay-title {
+  font-size: 40px;
+  margin: 25px 0 0;
 }
 
-.hotel {
-    background-image: url("HOTEL.webp");
+.header-overlay-paragraph {
+  margin: 20px 25px;
+  font-size: larger;
+  line-height: 1.5;
 }
 
-.art {
-    background-image: url("ART.webp");
-    background-position-y: 50%;
+.header-image {
+  width: 100%;
+  background-image: url("brazilbg.jpeg");
+  height: 1240px;
 }
 
-.city {
-    background-image: url("city.avif");
+.header-overlay-text {
+  width: 900px;
+  height: 450px;
+  background-color: #283618;
+  position: absolute;
+  bottom: 100px;
+  left: 160px;
+  opacity: 70%;
+  font-size: larger;
+  padding: auto;
+  display: flex;
+  flex-direction: column;
 }
 
-.begin {
-    margin-top: 200px;
-    text-align: center;
-    padding: 400px;
-    font-size: 50px;
-    background-repeat: no-repeat;
-    background-size: cover;
-    font-style: oblique;
-    background-image: url("beach.gif") ;
+.section-contents-header {
+  align-items: center;
+  background-color: beige;
+  color: #606c38;
+  display: flex;
+  font-size: 30px;
+  height: 100px;
+  justify-content: center;
+  padding: auto;
+  text-align: center;
+  margin-top: 100px;
+  width: 100%;
 }
 
-.nxtpg {
-    color: pink;
-    bottom: 100px;
-    left: 100px;
-    display: flex;
+.section-content {
+  justify-content: space-around;
+  display: flex;
+  max-height: none;
+  align-items: center;
+  width: 100%;
 }
 
-.typewriter h2 {
-    overflow: hidden; 
-    border-right: .15em solid orange; 
-    white-space: nowrap; 
-    margin: 0 auto; 
-    letter-spacing: .001em;
-    animation: 
-      typing 3.5s steps(40, end),
-      blink-caret .75s step-end infinite;
-  }
-  
-  @keyframes typing {
-    from { width: 0 }
-    to { width: 100% }
-  }
-  
-  @keyframes blink-caret {
-    from, to { border-color: transparent }
-    50% { border-color: orange; }
-  }
+.section-contents-titles {
+  display: flex;
+  text-align: center;
+  font-size: 35px;
+  height: 20px;
+  margin-left: 35px;
+}
 
+.section-content-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 80px;
+}
+.section-contents-images {
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+  width: 500px;
+  height: 800px;
+  background-image: url("brazilbg.jpeg");
+}
+
+.section-content-food,
+.section-content-hotel,
+.section-content-art,
+.section-content-city {
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 0px;
+  border-radius: 30px;
+}
+
+.section-content-food {
+  background-image: url("victoria-shes-UC0HZdUitWY-unsplash.jpg");
+}
+
+.section-content-hotel {
+  background-image: url("HOTEL.webp");
+}
+
+.section-content-art {
+  background-image: url("ART.webp");
+  background-position-y: 50%;
+}
+
+.section-content-city {
+  background-image: url("city.avif");
+}
+
+.footer {
+  background-image: url("beach.gif");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 450px;
+  justify-content: space-around;
+  display: flex;
+  max-height: none;
+  align-items: center;
+  width: 100%;
+  margin-top: 150px;
+  background-position-y: 50%;
+}
+
+.footer-links {
+  color: #003566;
+  display: flex;
+  text-align: center;
+  font-size: 60px;
+  font-style: oblique;
+  text-shadow: rgb(18, 3, 218) 1px 0 5px;
+}
+
+.footer-links:hover {
+  color: red;
+  text-shadow: rgb(84, 16, 16) 1px 0 10px;
+}
+
+.section-links {
+  color: #606c38;
+  text-decoration: none;
+}
+
+.section-links:hover {
+  color: #ecf39e;
+}
