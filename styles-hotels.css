@@ -80,6 +80,35 @@ body {
 }
 
 .section-header-stars {
-  height: 3%;
-  width: 2%;
+  height: 80%;
+  width: 15%;
+}
+
+.section-hotel {
+  align-items: center;
+  background-color: red;
+  display: flex;
+  height: 150px;
+  justify-content: center;
+  text-align: center;
+  margin: 10px auto;
+  width: 40%;
+}
+
+.article-hotel {
+  align-items: center;
+  background-color: beige;
+  display: flex;
+  text-align: center;
+  margin: 10px auto;
+  width: 40%;
+  height: 450px;
+}
+
+.section-hotel-image {
+  height: 100%;
+  width: 50%;
+  display: flex;
+  align-items: center;
+  padding: 15px;
 }
