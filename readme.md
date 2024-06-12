@@ -41,4 +41,6 @@ popover elements
 positon absoltue ad psoiton relatife
 group classes selector
 emphaiss, block, span, strong
-span is just as bog as the word meanwilh ep teag expand sit and tries to make it as bgi as possible
+span is just as big as the word meanwhile p tag expands it and tries to make it as big as possible
+differene between jsutfiy cotnent and justoify tiems
+how to use a folder

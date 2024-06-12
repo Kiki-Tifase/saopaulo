@@ -69,13 +69,14 @@ body {
 }
 
 .section-container-map {
-  height: 75vb;
+  height: 950px;
   background-image: url("images/citymap.jpeg");
   background-size: cover;
   background-repeat: no-repeat;
   margin: 0px auto;
   display: flex;
   position: relative;
+  width: 100%;
 }
 
 .dot1,
@@ -103,9 +104,33 @@ body {
 }
 .dot4 {
   top: 10%;
-  right: 490%;
+  right: 49%;
 }
 
-.my-popover1 {
-  width: 60px;
+#my-popover1 {
+  position: absolute;
+  top: 33%;
+  left: 25%;
+  width: 30%;
+}
+
+#my-popover2 {
+  position: absolute;
+  top: -15%;
+  right: 58%;
+  width: 30%;
+}
+
+#my-popover3 {
+  position: absolute;
+  top: 60%;
+  left: 70%;
+  width: 30%;
+}
+
+#my-popover4 {
+  position: absolute;
+  top: -30%;
+  right: 10%;
+  width: 30%;
 }

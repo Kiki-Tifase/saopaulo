@@ -67,103 +67,42 @@ body {
   text-align: center;
   width: 90%;
 }
-
-.section-header-stardiv {
+.section-header-h2 {
   align-items: center;
   background-color: beige;
+  color: #606c38;
   display: flex;
-  height: 20px;
-  padding: 5px 0px 10px;
-}
-
-.section-header-stars {
-  height: 30px;
-  border-bottom: 2px #283618;
-  display: flex;
-  padding-top: 10px;
-}
-
-.section-hotel {
-  align-items: center;
-  background-color: red;
-  display: flex;
-  height: 150px;
+  font-size: 30px;
+  height: 100px;
   justify-content: center;
+  padding: 5px 15px;
   text-align: center;
-  margin: 10px auto;
-  width: 40%;
+  width: fit-content;
+  margin: auto;
 }
 
-.article-hotel {
-  align-items: center;
-  background-color: beige;
-  display: flex;
-  text-align: center;
-  margin: -20px auto;
-  width: 40%;
-  height: 550px;
-}
-
-.section-hotel-image {
-  width: 50%;
-  align-items: center;
-  padding: 15px;
-  margin: 20px 0px;
-}
-
-.section-hotel-desc {
+.section-boxes-container {
   display: grid;
-  grid-template-columns: 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 10px;
+  margin: 20px 300px;
+  justify-items: center;
 }
 
-.section-hotel-text {
-  text-align: left;
-  border-bottom: 2px solid darkgreen;
-  width: 90%;
-  padding: 10px 2px 15px;
+.section-food-box {
+  width: 500px;
+  height: 500px;
+  background-image: url("images/sml-img5.avif");
+  padding: 0;
+}
+
+.section-food-box-header {
+  color: #283618;
+  background-color: #ecf39e;
+  height: 10%;
   margin: 0;
-}
-
-.section-hotel-price {
-  border-bottom: 2px solid darkgreen;
-  padding: 8px 1px;
-  display: flex;
-  justify-content: space-between;
-  width: 90%;
-  height: 60px;
-}
-
-.section-hotel-price button,
-.section-hotel-price h3 {
-  border-radius: 20px;
-  margin: auto 15px;
-  padding: auto;
-  font-size: 18px;
-}
-
-.section-hotel-price button:active {
-  transform: translateY(2px);
-}
-
-.section-hotel-price button {
-  background-color: darkgreen;
-  color: white;
-  padding: 9px 15px;
-}
-.section-hotel-price button:hover {
-  background-color: red;
-}
-
-.section-hotel-tiny {
-  width: 110px;
-  text-align: left;
-  border-bottom: 2px solid darkgreen;
-  padding: 10px 2px 15px;
-  margin: 0;
-}
-
-.article-hotel {
-  margin-bottom: 150px;
+  padding: 15px 25px;
+  font-size: 30px;
 }
 
 .footer {

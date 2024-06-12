@@ -132,7 +132,6 @@ body {
   text-align: center;
   width: 500px;
   height: 800px;
-  background-image: url("brazilbg.jpeg");
 }
 
 .section-content-food,
@@ -146,24 +145,24 @@ body {
 }
 
 .section-content-food {
-  background-image: url("victoria-shes-UC0HZdUitWY-unsplash.jpg");
+  background-image: url("images/victoria-shes-UC0HZdUitWY-unsplash.jpg");
 }
 
 .section-content-hotel {
-  background-image: url("HOTEL.webp");
+  background-image: url("images/HOTEL.webp");
 }
 
 .section-content-art {
-  background-image: url("ART.webp");
+  background-image: url("images/ART.webp");
   background-position-y: 50%;
 }
 
 .section-content-city {
-  background-image: url("city.avif");
+  background-image: url("images/city.avif");
 }
 
 .footer {
-  background-image: url("beach.gif");
+  background-image: url("images/beach.gif");
   background-repeat: no-repeat;
   background-size: cover;
   height: 450px;
