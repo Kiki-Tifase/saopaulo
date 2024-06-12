@@ -1,5 +1,5 @@
 * {
-  outline: red 1px;
+  outline: solid red 1px;
 }
 
 body {
@@ -62,9 +62,9 @@ body {
   font-size: 30px;
   height: 100px;
   justify-content: center;
+  margin: 80px auto;
   padding: auto;
   text-align: center;
-  margin: 100px auto;
   width: 90%;
 }
 
@@ -72,16 +72,15 @@ body {
   align-items: center;
   background-color: beige;
   display: flex;
-  height: 150px;
-  justify-content: center;
-  text-align: center;
-  margin: 10px auto;
-  width: 40%;
+  height: 20px;
+  padding: 5px 0px 10px;
 }
 
 .section-header-stars {
-  height: 80%;
-  width: 15%;
+  height: 30px;
+  border-bottom: 2px #283618;
+  display: flex;
+  padding-top: 10px;
 }
 
 .section-hotel {
@@ -100,15 +99,106 @@ body {
   background-color: beige;
   display: flex;
   text-align: center;
-  margin: 10px auto;
+  margin: -20px auto;
   width: 40%;
-  height: 450px;
+  height: 550px;
 }
 
 .section-hotel-image {
-  height: 100%;
   width: 50%;
-  display: flex;
   align-items: center;
   padding: 15px;
+  margin: 20px 0px;
+}
+
+.section-hotel-desc {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+.section-hotel-text {
+  text-align: left;
+  border-bottom: 2px solid darkgreen;
+  width: 90%;
+  padding: 10px 2px 15px;
+  margin: 0;
+}
+
+.section-hotel-price {
+  border-bottom: 2px solid darkgreen;
+  padding: 8px 1px;
+  display: flex;
+  justify-content: space-between;
+  width: 90%;
+  height: 60px;
+}
+
+.section-hotel-price button,
+.section-hotel-price h3 {
+  border-radius: 20px;
+  margin: auto 15px;
+  padding: auto;
+  font-size: 18px;
+}
+
+.section-hotel-price button:active {
+  transform: translateY(2px);
+}
+
+.section-hotel-price button {
+  background-color: darkgreen;
+  color: white;
+  padding: 9px 15px;
+}
+.section-hotel-price button:hover {
+  background-color: red;
+}
+
+.section-hotel-tiny {
+  width: 50px;
+  text-align: left;
+  border-bottom: 2px solid darkgreen;
+  padding: 10px 2px 15px;
+  margin: 0;
+}
+
+.article-hotel {
+  margin-bottom: 150px;
+}
+
+.footer {
+  background-image: url("beach.gif");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 450px;
+  justify-content: space-around;
+  display: flex;
+  max-height: none;
+  align-items: center;
+  width: 100%;
+  margin-top: 150px;
+  background-position-y: 50%;
+}
+
+.footer-links {
+  color: #003566;
+  display: flex;
+  text-align: center;
+  font-size: 60px;
+  font-style: oblique;
+  text-shadow: rgb(18, 3, 218) 1px 0 5px;
+}
+
+.footer-links:hover {
+  color: red;
+  text-shadow: rgb(84, 16, 16) 1px 0 10px;
+}
+
+.section-links {
+  color: #606c38;
+  text-decoration: none;
+}
+
+.section-links:hover {
+  color: #ecf39e;
 }

@@ -35,3 +35,10 @@ we learn tbaout the bem namign convention
 text shadow
 hwo to simulatneouslky use box sixzing an dvertical align
 started my second page
+
+day 3
+popover elements
+positon absoltue ad psoiton relatife
+group classes selector
+emphaiss, block, span, strong
+span is just as bog as the word meanwilh ep teag expand sit and tries to make it as bgi as possible
