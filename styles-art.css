@@ -1,5 +1,5 @@
 * {
-  outline: solid red 1px;
+  outline: red 1px;
 }
 
 .nav-bar ol {
@@ -68,11 +68,12 @@
   border-radius: 5px;
   display: grid;
   grid-template-columns: 2fr 1fr 1fr 1fr;
+  width: 90%;
 }
 
-.logo-holder {
+.logo-holder,
+.logo-holder-big {
   position: relative;
-  margin: 20px;
 }
 
 .logo-holder,
@@ -81,12 +82,20 @@
 .logo-holder .text {
   transition: opacity 0.5s ease-in-out;
 }
+.logo-holder-big,
+.smlimg1,
+.sml-img2,
+.logo-holder-big .text {
+  transition: opacity 0.5s ease-in-out;
+}
 
-.logo-holder .text {
+.logo-holder .text,
+.logo-holder-big .text {
   position: absolute;
   bottom: 0;
   left: 0;
   opacity: 0;
+  width: 100%;
 }
 
 .logo-holder:hover .sml-img1 .sml-img2 {
@@ -95,16 +104,36 @@
 .logo-holder:hover .text {
   opacity: 1;
 }
+.logo-holder-big:hover .sml-img1 .sml-img2 {
+  opacity: 0;
+}
+.logo-holder-big:hover .text {
+  opacity: 1;
+}
 
 .figure-sml-img-columns {
-  margin: 14px;
+  margin: auto;
+  width: 300px;
+}
+.figure-big-img-columns {
+  margin: auto;
+  width: 1250px;
 }
 
 .text {
-  font-size: 20px;
+  font-size: 40px;
   bottom: 0;
-  text-align: right;
   opacity: 0;
-  color: blue;
+  color: black;
   background-color: white;
+  margin-bottom: 10px;
+}
+
+.sml-img1 {
+  width: 100%;
+  margin-bottom: 17px;
+}
+.sml-img {
+  width: 100%;
+  padding: auto;
 }

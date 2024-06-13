@@ -44,3 +44,8 @@ emphaiss, block, span, strong
 span is just as big as the word meanwhile p tag expands it and tries to make it as big as possible
 differene between jsutfiy cotnent and justoify tiems
 how to use a folder
+
+day 4
+image i div sizing
+& nestign selector
+nesting in css
