@@ -49,3 +49,5 @@ day 4
 image i div sizing
 & nestign selector
 nesting in css
+arrays, strings, objects, numbers
+vue
