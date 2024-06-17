@@ -51,3 +51,10 @@ image i div sizing
 nesting in css
 arrays, strings, objects, numbers
 vue
+
+day 5
+how to use vue
+
+day 6
+how to open a vue file in the terminal
+z index

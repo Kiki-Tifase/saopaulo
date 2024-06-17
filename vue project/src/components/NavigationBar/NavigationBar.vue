@@ -1,12 +1,20 @@
 <script setup>
 import { RouterLink } from 'vue-router'
+import NavigationBarMenu from '@/components/NavigationBarMenu/NavigationBarMenu.vue'
+import { ref } from 'vue'
+
+const isMenuOpen = ref(false)
+
+const toggleMenuOpen = () => {
+  isMenuOpen.value = !isMenuOpen.value
+}
 </script>
 
 <template>
   <nav class="nav-bar">
     <ul class="nav-navigation">
       <li>
-        <button class="nav-square-left nav-text-menu"><h2>Menu</h2></button>
+        <button class="nav-square-left nav-text-menu" @click="toggleMenuOpen"><h2>Menu</h2></button>
       </li>
       <li class="nav-square-left">
         <figure>
@@ -20,15 +28,13 @@ import { RouterLink } from 'vue-router'
       </li>
     </ul>
   </nav>
-  <div class="drop-down-rectangle">
-    <h2 class="rectangle-links">Our Art</h2>
-    <h2 class="rectangle-links">Our Art</h2>
-    <h2 class="rectangle-links">Our Art</h2>
-    <h2 class="rectangle-links">Our Art</h2>
-  </div>
+  <NavigationBarMenu v-if="isMenuOpen" />
 </template>
 
 <style>
+* {
+  border: 1px red;
+}
 .nav-bar ol {
   list-style-type: none;
 }
@@ -39,15 +45,6 @@ import { RouterLink } from 'vue-router'
   display: flex;
   justify-content: center;
   align-items: center;
-}
-
-.drop-down-rectangle {
-  height: 600px;
-  background-color: beige;
-  width: 300px;
-  justify-content: center;
-  align-items: center;
-  padding: 200px 100px;
 }
 
 .nav-text-menu {
