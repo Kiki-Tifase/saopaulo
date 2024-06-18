@@ -40,7 +40,7 @@ import ContentBits from '@/components/ContentBits/ContentBits.vue'
   </main>
 </template>
 
-<style>
+<style scoped>
 .section-contents-header {
   align-items: center;
   background-color: beige;

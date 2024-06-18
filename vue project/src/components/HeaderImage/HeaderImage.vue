@@ -15,19 +15,15 @@
   </section>
 </template>
 
-<style>
-.header-overlay-text {
-  font: white;
-}
-
+<style scoped>
 .header-image {
   width: 1150px;
 }
 
-.header-overlay {
+/* .header-overlay {
   position: relative;
   text-align: center;
-}
+} */
 
 .header-overlay-title {
   font-size: 40px;
@@ -54,5 +50,6 @@
   padding: auto;
   display: flex;
   flex-direction: column;
+  font: white;
 }
 </style>

@@ -58,3 +58,9 @@ how to use vue
 day 6
 how to open a vue file in the terminal
 z index
+difference betwene template and div
+scoped
+slots an props
+v-for
+v-if
+components

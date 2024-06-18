@@ -27,6 +27,11 @@ const router = createRouter({
       path: '/hotel',
       name: 'hotel',
       component: HotelView
+    },
+    {
+      path: '/art',
+      name: 'art',
+      component: ArtView
     }
     // {
     //   path: '/about',

@@ -11,7 +11,7 @@ defineProps({
   </a>
 </template>
 
-<style>
+<style scoped>
 .rectangle-links {
   text-decoration: none;
 }

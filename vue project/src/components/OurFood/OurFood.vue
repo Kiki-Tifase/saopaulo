@@ -1,3 +1,7 @@
+<script setup>
+import Food from '@/components/Food/Food.vue'
+</script>
+
 <template>
   <header>
     <h1 class="section-header-h1">Your Food</h1>
@@ -27,7 +31,7 @@
   </article>
 </template>
 
-<style>
+<style scoped>
 .section-header-h2 {
   align-items: center;
   background-color: beige;
@@ -64,5 +68,18 @@
   margin: 0;
   padding: 15px 25px;
   font-size: 30px;
+}
+.section-header-h1 {
+  align-items: center;
+  background-color: beige;
+  color: #606c38;
+  display: flex;
+  font-size: 30px;
+  height: 100px;
+  justify-content: center;
+  margin: 80px auto;
+  padding: auto;
+  text-align: center;
+  width: 90%;
 }
 </style>

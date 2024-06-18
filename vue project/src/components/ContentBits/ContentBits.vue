@@ -13,7 +13,7 @@ defineProps({
   </article>
 </template>
 
-<style>
+<style scoped>
 .section-contents-titles {
   display: flex;
   text-align: center;

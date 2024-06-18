@@ -31,10 +31,7 @@ const toggleMenuOpen = () => {
   <NavigationBarMenu v-if="isMenuOpen" />
 </template>
 
-<style>
-* {
-  border: 1px red;
-}
+<style scoped>
 .nav-bar ol {
   list-style-type: none;
 }

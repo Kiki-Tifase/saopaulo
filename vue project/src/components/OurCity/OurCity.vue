@@ -44,7 +44,7 @@
   </section>
 </template>
 
-<style>
+<style scoped>
 .section-header-h1 {
   align-items: center;
   background-color: beige;
