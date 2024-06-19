@@ -26,8 +26,8 @@ import Hotel from '@/components/Hotel/Hotel.vue'
 <style scoped>
 .section-header-h1 {
   align-items: center;
-  background-color: beige;
-  color: #606c38;
+  background-color: #2b2d42;
+  color: white;
   display: flex;
   font-size: 30px;
   height: 100px;

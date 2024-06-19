@@ -3,45 +3,33 @@ import ContentBits from '@/components/ContentBits/ContentBits.vue'
 </script>
 
 <template>
-  <section class="section-contents-header">
+  <section class="header">
     <h2>Start Exploring</h2>
   </section>
   <main class="section-content">
-    <section class="section-content-grid">
-      <article class="section-links">
+    <section class="grid">
+      <article class="links">
         <ContentBits link="/hotel" name="hotel"></ContentBits>
-        <figure
-          class="section-contents-images section-content-hotel section-links"
-          alt="Hotel"
-        ></figure>
+        <figure class="images hotel-section links" alt="Hotel"></figure>
       </article>
-      <article class="section-links">
+      <article class="links">
         <ContentBits link="/art" name="art"></ContentBits>
-        <figure
-          class="section-contents-images section-content-art section-links"
-          alt="Hotel"
-        ></figure>
+        <figure class="images art-section links" alt="Hotel"></figure>
       </article>
-      <article class="section-links">
+      <article class="links">
         <ContentBits link="/city" name="city"></ContentBits>
-        <figure
-          class="section-contents-images section-content-city section-links"
-          alt="Hotel"
-        ></figure>
+        <figure class="images city-section links" alt="Hotel"></figure>
       </article>
-      <article class="section-links">
+      <article class="links">
         <ContentBits link="/food" name="food"></ContentBits>
-        <figure
-          class="section-contents-images section-content-food section-links"
-          alt="Hotel"
-        ></figure>
+        <figure class="images food-section links" alt="Hotel"></figure>
       </article>
     </section>
   </main>
 </template>
 
 <style scoped>
-.section-contents-header {
+.header {
   align-items: center;
   background-color: beige;
   color: #606c38;
@@ -63,56 +51,56 @@ import ContentBits from '@/components/ContentBits/ContentBits.vue'
   width: 100%;
 }
 
-.section-content-grid {
+.grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 80px;
 }
 
-.section-contents-images {
+.images {
   display: flex;
   justify-content: space-around;
   text-align: center;
-  width: 250px;
-  height: 400px;
+  width: 500px;
+  height: 800px;
 }
 
-.section-content-food,
-.section-content-hotel,
-.section-content-art,
-.section-content-city {
+.food-section,
+.hotel-section,
+.art-section,
+.city-section {
   background-repeat: no-repeat;
   background-size: cover;
   margin: 0px;
   border-radius: 30px;
 }
-.section-links:hover {
+.links:hover {
   color: #ecf39e;
 }
 
-.section-content-food {
+.food-section {
   background-image: url('@/assets/images/sml-img7.avif');
 }
 
-.section-content-hotel {
+.hotel-section {
   background-image: url('@/assets/images/HOTEL.webp');
 }
 
-.section-content-art {
+.art-section {
   background-image: url('@/assets/images/ART.webp');
   background-position-y: 50%;
 }
 
-.section-content-city {
+.city-section {
   background-image: url('@/assets/images/city.avif');
 }
 
-.section-links {
+.links {
   color: #606c38;
   text-decoration: none;
 }
 
-.section-links:hover {
+.links:hover {
   color: #ecf39e;
 }
 </style>

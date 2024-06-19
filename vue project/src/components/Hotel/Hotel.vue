@@ -11,19 +11,19 @@ defineProps({
 </script>
 
 <template>
-  <article class="article-hotel">
-    <img class="section-hotel-image" :src="imgSrc" />
-    <article class="section-hotel-desc">
-      <h2 class="section-hotel-text">{{ title }}</h2>
-      <p class="section-hotel-tiny">{{ location }}</p>
+  <article class="hotel-div">
+    <img class="hotel-image" :src="imgSrc" />
+    <article class="hotel-desc">
+      <h2 class="hotel-text">{{ title }}</h2>
+      <p class="location">{{ location }}</p>
       <section>
-        <article class="section-header-stardiv">
+        <article class="stardiv">
           <RatingStars :quantity="rating" />
         </article>
-        <p class="section-hotel-text">
+        <p class="hotel-text">
           <slot name="text"></slot>
         </p>
-        <article class="section-hotel-price">
+        <article class="price">
           <h3>${{ price }}</h3>
           <a :href="link">
             <button>Check Availability</button>
@@ -35,7 +35,7 @@ defineProps({
 </template>
 
 <style scoped>
-.article-hotel {
+.hotel-div {
   align-items: center;
   background-color: beige;
   display: flex;
@@ -45,19 +45,19 @@ defineProps({
   height: 550px;
 }
 
-.section-hotel-image {
+.hotel-image {
   width: 50%;
   align-items: center;
   padding: 15px;
   margin: 20px 0px;
 }
 
-.section-hotel-desc {
+.hotel-desc {
   display: grid;
   grid-template-columns: 1fr;
 }
 
-.section-hotel-text {
+.hotel-text {
   text-align: left;
   border-bottom: 2px solid darkgreen;
   width: 90%;
@@ -65,7 +65,7 @@ defineProps({
   margin: 0;
 }
 
-.section-hotel-tiny {
+.location {
   width: 110px;
   text-align: left;
   border-bottom: 2px solid darkgreen;
@@ -73,7 +73,7 @@ defineProps({
   margin: 0;
 }
 
-.section-hotel-price {
+.price {
   border-bottom: 2px solid darkgreen;
   padding: 8px 1px;
   display: flex;
@@ -82,28 +82,28 @@ defineProps({
   height: 60px;
 }
 
-.section-hotel-price button,
-.section-hotel-price h3 {
+.price button,
+.price h3 {
   border-radius: 20px;
   margin: auto 15px;
   padding: auto;
   font-size: 18px;
 }
 
-.section-hotel-price button:active {
+.price button:active {
   transform: translateY(2px);
 }
 
-.section-hotel-price button {
+.price button {
   background-color: darkgreen;
   color: white;
   padding: 9px 15px;
 }
-.section-hotel-price button:hover {
+.price button:hover {
   background-color: red;
 }
 
-.section-header-stardiv {
+.stardiv {
   align-items: center;
   background-color: beige;
   display: flex;

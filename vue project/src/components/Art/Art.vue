@@ -14,22 +14,22 @@ const hasOneImage = computed(() => {
 </script>
 
 <template>
-  <article class="figure-big-img-columns" v-if="hasOneImage">
-    <figure class="logo-holder-big">
-      <img class="sml-img2" src="https://images.unsplash.com/photo-1563786785330-2ad8162ef53a" />
-      <p class="text">{{ title }}</p>
+  <article class="figure-big-img-column" v-if="hasOneImage">
+    <figure class="title-container-big">
+      <img class="big-img" src="https://images.unsplash.com/photo-1563786785330-2ad8162ef53a" />
+      <p class="title-text">{{ title }}</p>
     </figure>
   </article>
 
   <template v-else>
     <figure class="figure-sml-img-columns">
-      <article class="logo-holder">
-        <img :src="pictureSrc" class="sml-img1" />
-        <p class="text">{{ title }}</p>
+      <article class="title-container">
+        <img :src="pictureSrc" class="sml-img" />
+        <p class="title-text">{{ title }}</p>
       </article>
-      <article class="logo-holder">
-        <img :src="pictureSrcTwo" class="sml-img1" />
-        <p class="text">{{ titleTwo }}</p>
+      <article class="title-container">
+        <img :src="pictureSrcTwo" class="sml-img" />
+        <p class="title-text">{{ titleTwo }}</p>
       </article>
     </figure>
   </template>
@@ -38,27 +38,27 @@ const hasOneImage = computed(() => {
 <style scoped>
 /* where it gets crazy */
 
-.logo-holder,
-.logo-holder-big {
+.title-container,
+.title-container-big {
   position: relative;
   display: flex;
 }
 
-.logo-holder,
+.title-container,
 .smlimg1,
-.sml-img2,
-.logo-holder .text {
+.big-img,
+.title-container .title-text {
   transition: opacity 0.5s ease-in-out;
 }
-.logo-holder-big,
+.title-container-big,
 .smlimg1,
-.sml-img2,
-.logo-holder-big .text {
+.big-img,
+.title-container-big .title-text {
   transition: opacity 0.5s ease-in-out;
 }
 
-.logo-holder .text,
-.logo-holder-big .text {
+.title-container .title-text,
+.title-container-big .title-text {
   position: absolute;
   bottom: 0;
   left: 0;
@@ -66,16 +66,16 @@ const hasOneImage = computed(() => {
   width: 100%;
 }
 
-.logo-holder:hover .sml-img1 .sml-img2 {
+.title-container:hover .sml-img .big-img {
   opacity: 0;
 }
-.logo-holder:hover .text {
+.title-container:hover .title-text {
   opacity: 1;
 }
-.logo-holder-big:hover .sml-img1 .sml-img2 {
+.title-container-big:hover .sml-img .big-img {
   opacity: 0;
 }
-.logo-holder-big:hover .text {
+.title-container-big:hover .title-text {
   opacity: 1;
 }
 
@@ -86,13 +86,13 @@ const hasOneImage = computed(() => {
   flex-direction: column;
 }
 
-.figure-big-img-columns {
+.figure-big-img-column {
   display: flex;
   align-content: center;
   padding: 10px;
 }
 
-.text {
+.title-text {
   font-size: 40px;
   bottom: 0;
   opacity: 0;
@@ -100,15 +100,11 @@ const hasOneImage = computed(() => {
   background-color: white;
 }
 
-.sml-img1 {
+.sml-img {
   width: 100%;
 }
-.sml-img2 {
+.big-img {
   max-height: 100%;
   width: 100%;
-}
-
-.sml-img3 {
-  width: 60%;
 }
 </style>

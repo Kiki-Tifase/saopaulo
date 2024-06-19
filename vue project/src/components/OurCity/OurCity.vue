@@ -2,9 +2,9 @@
 
 <template>
   <header>
-    <h1 class="section-header-h1">Your City</h1>
+    <h1 class="header">Your City</h1>
   </header>
-  <section class="section-container-map">
+  <section class="map">
     <button class="dot1" popovertarget="my-popover1"></button>
     <p popover id="my-popover1">
       Parco Sempione is a picturesque urban park nestled in the heart of Milan, Italy. Boasting lush
@@ -45,7 +45,7 @@
 </template>
 
 <style scoped>
-.section-header-h1 {
+.header {
   align-items: center;
   background-color: beige;
   color: #606c38;
@@ -59,7 +59,7 @@
   width: 90%;
 }
 
-.section-container-map {
+.map {
   height: 950px;
   background-image: url('@/assets/images/citymap.jpeg');
   background-size: cover;

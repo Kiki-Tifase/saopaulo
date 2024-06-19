@@ -64,3 +64,11 @@ slots an props
 v-for
 v-if
 components
+
+day 7
+child component should not control spacing(margin/alginment) always do it from the parent.
+when detailing a string use double brackets when its not a tag and quotation marks when it is
+<Slide v-for="image in images" :imgSrc="image.src" :text="image.text"></Slide>
+to refer to props in the scirpt tag they have to be assigned a const
+to go through an array using index always minus one from the array length because an array starts from 0 meaning the 1st array will have the 0th index and 2nd array will have 1st index
+command option hack w/ up and down arrow

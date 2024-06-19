@@ -1,34 +1,18 @@
 <script setup>
-import Food from '@/components/Food/Food.vue'
+import Slider from '@/components/Slider/Slider.vue'
+
+const images = [
+  { text: 'ok', src: 'https://images.unsplash.com/photo-1619546952812-520e98064a52?w=500' },
+  { text: 'hello', src: 'https://images.unsplash.com/photo-1620218776119-2bc322e2d7ad' }
+]
 </script>
 
 <template>
   <header>
-    <h1 class="section-header-h1">Your Food</h1>
+    <h1 class="header-h1">Your Food</h1>
   </header>
   <h2 class="section-header-h2">Restaurant</h2>
-  <article class="section-boxes-container">
-    <section class="section-food-box">
-      <h3 class="section-food-box-header">Starters</h3>
-    </section>
-    <section class="section-food-box">
-      <h3 class="section-food-box-header">Main Course</h3>
-    </section>
-    <section class="section-food-box">
-      <h3 class="section-food-box-header">Dessert</h3>
-    </section>
-  </article>
-  <article class="section-boxes-container">
-    <section class="section-food-box">
-      <h3 class="section-food-box-header">Starters</h3>
-    </section>
-    <section class="section-food-box">
-      <h3 class="section-food-box-header">Main Course</h3>
-    </section>
-    <section class="section-food-box">
-      <h3 class="section-food-box-header">Dessert</h3>
-    </section>
-  </article>
+  <Slider :images="images" />
 </template>
 
 <style scoped>
@@ -69,7 +53,7 @@ import Food from '@/components/Food/Food.vue'
   padding: 15px 25px;
   font-size: 30px;
 }
-.section-header-h1 {
+.header-h1 {
   align-items: center;
   background-color: beige;
   color: #606c38;

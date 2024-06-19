@@ -18,7 +18,11 @@ const toggleMenuOpen = () => {
       </li>
       <li class="nav-square-left">
         <figure>
-          <img src="../../assets/images/Untitled_design-2-removebg-preview.png" alt="logo" />
+          <img
+            class="logo"
+            src="../../assets/images/Untitled_design-2-removebg-preview.png"
+            alt="logo"
+          />
         </figure>
       </li>
       <li class="nav-square-left">
@@ -45,7 +49,8 @@ const toggleMenuOpen = () => {
 }
 
 .nav-text-menu {
-  background-color: #283618;
+  text-decoration: none;
+  background-color: #2b2d42;
   width: 300px;
   color: white;
   font-family: 'Times New Roman', Times, serif;
@@ -53,7 +58,7 @@ const toggleMenuOpen = () => {
 }
 
 .nav-navigation {
-  background-color: beige;
+  background-color: #8ea8c3;
   display: flex;
   height: 100px;
   justify-content: space-between;
@@ -62,8 +67,13 @@ const toggleMenuOpen = () => {
   width: 100%;
 }
 
+.logo {
+  height: 520px;
+  margin-top: 0px;
+}
+
 .nav-text-contact {
-  color: #283618;
+  color: white;
   font-family: 'Times New Roman', Times, serif;
   font-size: 5ch;
 }

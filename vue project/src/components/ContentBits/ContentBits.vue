@@ -7,14 +7,14 @@ defineProps({
 
 <template>
   <article>
-    <a :href="link" class="section-links">
-      <h3 class="section-contents-titles">Our {{ name }}</h3>
+    <a :href="link" class="links">
+      <h3 class="titles">Our {{ name }}</h3>
     </a>
   </article>
 </template>
 
 <style scoped>
-.section-contents-titles {
+.titles {
   display: flex;
   text-align: center;
   font-size: 30px;
@@ -22,12 +22,12 @@ defineProps({
   margin-left: 35px;
 }
 
-.section-links {
+.links {
   color: #606c38;
   text-decoration: none;
 }
 
-.section-links:hover {
+.links:hover {
   color: #ecf39e;
 }
 </style>

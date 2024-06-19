@@ -4,9 +4,9 @@ import Art from '@/components/Art/Art.vue'
 
 <template>
   <header>
-    <h1 class="section-header-h1">Your Art</h1>
+    <h1 class="header-h1">Your Art</h1>
   </header>
-  <section class="section-museum">
+  <section class="museum">
     <Art
       title="Mona Lisa"
       pictureSrc="https://images.unsplash.com/photo-1620218776119-2bc322e2d7ad"
@@ -33,7 +33,7 @@ import Art from '@/components/Art/Art.vue'
 </template>
 
 <style scoped>
-.section-header-h1 {
+.header-h1 {
   align-items: center;
   background-color: beige;
   color: #606c38;
@@ -46,7 +46,7 @@ import Art from '@/components/Art/Art.vue'
   text-align: center;
   width: 90%;
 }
-.section-museum {
+.museum {
   background-color: #606c38;
   border-radius: 5px;
   display: grid;
