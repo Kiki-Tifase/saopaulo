@@ -2,6 +2,7 @@
 import { RouterLink } from 'vue-router'
 import NavigationBarMenu from '@/components/NavigationBarMenu/NavigationBarMenu.vue'
 import { ref } from 'vue'
+const homeUrl = '/home'
 
 const isMenuOpen = ref(false)
 
@@ -17,13 +18,9 @@ const toggleMenuOpen = () => {
         <button class="nav-square-left nav-text-menu" @click="toggleMenuOpen"><h2>Menu</h2></button>
       </li>
       <li class="nav-square-left">
-        <figure>
-          <img
-            class="logo"
-            src="../../assets/images/Untitled_design-2-removebg-preview.png"
-            alt="logo"
-          />
-        </figure>
+        <a :href="homeUrl">
+          <img class="logo" src="../../assets/images/logo.png" alt="logo" />
+        </a>
       </li>
       <li class="nav-square-left">
         <h2 class="nav-text-contact">Contact</h2>
@@ -50,7 +47,7 @@ const toggleMenuOpen = () => {
 
 .nav-text-menu {
   text-decoration: none;
-  background-color: #2b2d42;
+  background-color: #23395b;
   width: 300px;
   color: white;
   font-family: 'Times New Roman', Times, serif;
@@ -58,7 +55,7 @@ const toggleMenuOpen = () => {
 }
 
 .nav-navigation {
-  background-color: #8ea8c3;
+  background-color: #dde8f4;
   display: flex;
   height: 100px;
   justify-content: space-between;
@@ -68,12 +65,12 @@ const toggleMenuOpen = () => {
 }
 
 .logo {
-  height: 520px;
-  margin-top: 0px;
+  height: 275px;
+  margin-top: 40px;
 }
 
 .nav-text-contact {
-  color: white;
+  color: #23395b;
   font-family: 'Times New Roman', Times, serif;
   font-size: 5ch;
 }
@@ -84,7 +81,7 @@ const toggleMenuOpen = () => {
 }
 
 .nav-divider {
-  border-left: 3px solid black;
+  border-left: black;
   margin-left: 20px;
 }
 </style>

@@ -72,3 +72,6 @@ when detailing a string use double brackets when its not a tag and quotation mar
 to refer to props in the scirpt tag they have to be assigned a const
 to go through an array using index always minus one from the array length because an array starts from 0 meaning the 1st array will have the 0th index and 2nd array will have 1st index
 command option hack w/ up and down arrow
+
+day 11
+how to dynamically bind a url

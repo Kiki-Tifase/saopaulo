@@ -11,7 +11,7 @@ import FooterLinks from '@/components/FooterLinks/FooterLinks.vue'
       <FooterLinks name="FAQ" link=/faq></FooterLinks>
     </section>
     <figure>
-      <img class="links" src="@/assets/images/Untitled_design-2-removebg-preview.png" />
+      <img class="links" src="@/assets/images/Screenshot 2024-06-24 at 14.58.05.png" />
     </figure>
   </footer>
 </template>
@@ -32,12 +32,13 @@ import FooterLinks from '@/components/FooterLinks/FooterLinks.vue'
 }
 
 .links {
-  color: #003566;
+  color: #723486;
   display: flex;
   text-align: center;
   font-size: 60px;
   font-style: oblique;
-  text-shadow: rgb(18, 3, 218) 1px 0 5px;
+  text-shadow: #723486 1px 0 5px;
+  margin-top: 100px;
 }
 
 .links:hover {

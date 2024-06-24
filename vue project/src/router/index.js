@@ -32,6 +32,11 @@ const router = createRouter({
       path: '/art',
       name: 'art',
       component: ArtView
+    },
+    {
+      path: '/home',
+      name: 'home',
+      component: HomeView
     }
     // {
     //   path: '/about',

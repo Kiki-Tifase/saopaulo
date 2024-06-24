@@ -31,8 +31,8 @@ import ContentBits from '@/components/ContentBits/ContentBits.vue'
 <style scoped>
 .header {
   align-items: center;
-  background-color: beige;
-  color: #606c38;
+  background-color: #dde8f4;
+  color: #23395b;
   display: flex;
   font-size: 30px;
   height: 100px;
@@ -41,6 +41,7 @@ import ContentBits from '@/components/ContentBits/ContentBits.vue'
   text-align: center;
   margin-top: 100px;
   width: 100%;
+  font-weight: 60px;
 }
 
 .section-content {
@@ -74,9 +75,6 @@ import ContentBits from '@/components/ContentBits/ContentBits.vue'
   margin: 0px;
   border-radius: 30px;
 }
-.links:hover {
-  color: #ecf39e;
-}
 
 .food-section {
   background-image: url('@/assets/images/sml-img7.avif');
@@ -98,6 +96,9 @@ import ContentBits from '@/components/ContentBits/ContentBits.vue'
 .links {
   color: #606c38;
   text-decoration: none;
+  margin: 25px 0px;
+  font-weight: bolder;
+  font-size: 90px;
 }
 
 .links:hover {

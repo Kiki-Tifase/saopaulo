@@ -16,7 +16,7 @@ const hasOneImage = computed(() => {
 <template>
   <article class="figure-big-img-column" v-if="hasOneImage">
     <figure class="title-container-big">
-      <img class="big-img" src="https://images.unsplash.com/photo-1563786785330-2ad8162ef53a" />
+      <img class="big-img" :src="pictureSrc" />
       <p class="title-text">{{ title }}</p>
     </figure>
   </article>
@@ -84,6 +84,7 @@ const hasOneImage = computed(() => {
   display: flex;
   gap: 10px;
   flex-direction: column;
+  margin: auto 0px;
 }
 
 .figure-big-img-column {
@@ -94,10 +95,9 @@ const hasOneImage = computed(() => {
 
 .title-text {
   font-size: 40px;
-  bottom: 0;
-  opacity: 0;
-  color: black;
-  background-color: white;
+  text-align: center;
+  color: white;
+  background-color: #f7a072;
 }
 
 .sml-img {

@@ -3,13 +3,13 @@ import NavigationBarMenuItem from '@/components/NavigationBarMenuItem/Navigation
 </script>
 <template>
   <div class="drop-down-rectangle">
+    <NavigationBarMenuItem name="Home" link="/home"></NavigationBarMenuItem>
     <NavigationBarMenuItem name="Art" link="/art"></NavigationBarMenuItem>
     <NavigationBarMenuItem name="City" link="/city"></NavigationBarMenuItem>
     <NavigationBarMenuItem name="Hotel" link="/hotel"></NavigationBarMenuItem>
     <NavigationBarMenuItem name="Food" link="/food"></NavigationBarMenuItem>
   </div>
 </template>
-
 <style scoped>
 .drop-down-rectangle {
   height: 1720px;
