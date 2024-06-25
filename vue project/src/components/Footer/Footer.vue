@@ -5,10 +5,10 @@ import FooterLinks from '@/components/FooterLinks/FooterLinks.vue'
 <template>
   <footer class="footer">
     <section>
-      <FooterLinks name="About" link="/about"></FooterLinks>
-      <FooterLinks name="Our Story" link=/our-story></FooterLinks>
-      <FooterLinks name="Shop" link=/shop></FooterLinks>
-      <FooterLinks name="FAQ" link=/faq></FooterLinks>
+      <FooterLinks name="About" link="https://developer.mozilla.org/en-US/"></FooterLinks>
+      <FooterLinks name="Our Story" link="https://developer.mozilla.org/en-US/"></FooterLinks>
+      <FooterLinks name="Shop" link="https://developer.mozilla.org/en-US/"></FooterLinks>
+      <FooterLinks name="FAQ" link="https://developer.mozilla.org/en-US/"></FooterLinks>
     </section>
     <figure>
       <img class="links" src="@/assets/images/Screenshot 2024-06-24 at 14.58.05.png" />
@@ -38,7 +38,7 @@ import FooterLinks from '@/components/FooterLinks/FooterLinks.vue'
   font-size: 60px;
   font-style: oblique;
   text-shadow: #723486 1px 0 5px;
-  width: 70%
+  width: 70%;
 }
 
 .links:hover {
