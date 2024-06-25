@@ -6,17 +6,30 @@ defineProps({
 </script>
 
 <template>
-  <figure class="slide">
-    <img :src="imgSrc" class="starter" />
-    <figcaption>{{ text }}</figcaption>
+  <figure class="title-food">
+    <figcaption class="title">{{ text }}</figcaption>
+    <img :src="imgSrc" class="food" />
   </figure>
 </template>
 
-<style>
-.slide {
+<style scoped>
+.title {
   width: 350px;
-  height: 400px;
-  background-color: #45425a;
-  display: flex;
+  color: white;
+  text-align: center;
+  margin: auto;
+  font-size: 30px;
+}
+
+.food {
+  width: 310px;
+  height: 350px;
+  margin: 0px 45px 0px 45px;
+  object-fit: cover;
+}
+
+.title-food {
+  display: grid;
+  grid-template-columns: 1fr;
 }
 </style>

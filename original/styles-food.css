@@ -141,3 +141,19 @@ body {
 .section-links:hover {
   color: #ecf39e;
 }
+
+.popover-container {
+  position: relative;
+}
+
+.popover-container img {
+  max-width: 100%; /* Ensure that the image doesn't exceed its container */
+}
+
+.my-popover1 {
+  display: none; /* Hide the popover by default */
+  position: absolute;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  padding: 10px;
+}

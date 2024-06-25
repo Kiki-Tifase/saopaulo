@@ -77,7 +77,7 @@ import ContentBits from '@/components/ContentBits/ContentBits.vue'
 }
 
 .food-section {
-  background-image: url('@/assets/images/sml-img7.avif');
+  background-image: url('@/assets/images/alex-munsell-auIbTAcSH6E-unsplash.jpg');
 }
 
 .hotel-section {
@@ -90,7 +90,7 @@ import ContentBits from '@/components/ContentBits/ContentBits.vue'
 }
 
 .city-section {
-  background-image: url('@/assets/images/city.avif');
+  background-image: url('@/assets/images/michael-lechner-19eWcsdzGeE-unsplash.jpg');
 }
 
 .links {

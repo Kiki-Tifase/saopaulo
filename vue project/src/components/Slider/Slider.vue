@@ -32,25 +32,27 @@ function arrowRight() {
       :text="image.text"
     ></Slide>
 
-    <button @click="arrowRight" class="button">&#62;</button>
+    <button @click="arrowRight" class="buttonR">&#62;</button>
   </div>
 </template>
 
 <style>
 .slide {
-  width: 350px;
-  height: 400px;
-  background-color: #45425a;
+  width: 450px;
+  height: 500px;
+  background-color: #b33434;
   display: flex;
-}
-
-.starter {
-  width: 200px;
-  height: 200px;
-  margin: 150px auto;
+  border-radius: 10px;
 }
 
 .button {
-  background-color: rgba(255, 255, 255, 0.65);
+  background-color: rgba(255, 255, 255, 0.5);
+  border-top-left-radius: 8px;
+  border-bottom-left-radius: 8px;
+}
+.buttonR {
+  background-color: rgba(255, 255, 255, 0.5);
+  border-top-right-radius: 8px;
+  border-bottom-right-radius: 8px;
 }
 </style>

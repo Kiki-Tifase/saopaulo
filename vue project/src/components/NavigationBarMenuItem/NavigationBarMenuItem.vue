@@ -13,7 +13,7 @@ defineProps({
 
 <style scoped>
 .rectangle-links {
-  color: white;
+  color: #723486;
   text-decoration: underline;
   font-size: 30px;
 }

@@ -3,7 +3,7 @@
 <template>
   <div class="saopaulo">
     <div class="descportion">
-      <h2 class="location">Sao Paulo, Brazil</h2>
+      <h2 class="location1">Sao Paulo, Brazil</h2>
       <p class="desc">
         One of the world's most captivating places, Brazil is a country of powdery white-sand
         beaches, verdant rainforests and wild, rhythm-filled metropolises.
@@ -39,17 +39,24 @@
   font-size: 60px;
 }
 
+.location1 {
+  color: #23395b;
+  font-weight: bolder;
+  font-size: 60px;
+  line-height: 70px;
+}
+
 .desc {
   font-size: 20px;
 }
 
 .descportion {
   width: 400px;
-  margin: 45px 100px 0px 700px;
+  margin: 45px 70px 0px 400px;
 }
 .descportion2 {
-  width: 1000px;
-  margin: 45px 300px 0px 100px;
+  width: 1200px;
+  margin: 45px 300px 0px 50px;
 }
 
 .saopaulo {
@@ -66,5 +73,6 @@
   font-size: 30px;
   font-weight: bolder;
   margin: auto;
+  column-gap: 20px;
 }
 </style>

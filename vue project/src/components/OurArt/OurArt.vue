@@ -56,26 +56,26 @@ import Art from '@/components/Art/Art.vue'
   </section>
   <section class="museum">
     <Art
-      title="Mona Lisa"
-      pictureSrc="https://images.unsplash.com/photo-1620218776119-2bc322e2d7ad"
+      title="Lygia Clark"
+      pictureSrc="https://d16kd6gzalkogb.cloudfront.net/artist_images/Lygia-Clark-Photo-of-the-artist-Image-via-artlogic-res.jpg"
     ></Art>
     <Art
-      title="Mona Lisa"
-      pictureSrc="https://images.unsplash.com/photo-1620218776119-2bc322e2d7ad"
-      titleTwo="Mona Lisa"
-      pictureSrcTwo="https://images.unsplash.com/photo-1579783902614-a3fb3927b6a5"
+      title="Creature Maquette"
+      pictureSrc="https://img.artlogic.net/w_1800,h_1800,c_limit/exhibit-e/556d89b2cfaf3421548b4568/abdb793b0d8a1f24ea40635258e0452a.jpeg"
+      titleTwo="Critter Bird in Space"
+      pictureSrcTwo="https://www.artnews.com/wp-content/uploads/2017/05/img-lygia-clark131139580139.jpg"
     ></Art>
     <Art
-      title="Mona Lisa"
-      pictureSrc="https://images.unsplash.com/flagged/photo-1572392640988-ba48d1a74457"
-      titleTwo="Mona Lisa"
-      pictureSrcTwo="https://images.unsplash.com/photo-1547891654-e66ed7ebb968"
+      title="Constructed Head"
+      pictureSrc="https://media.tate.org.uk/aztate-prd-ew-dg-wgtail-st1-ctr-data/images/gabo_head_install_B1P5gVc.width-600.jpg"
+      titleTwo="Livro Obra"
+      pictureSrcTwo="https://d2u3kfwd92fzu7.cloudfront.net/catalog/artwork/gallery/1068/LC-0008_Lygia_Clark-2_Edouard_Fraipont.jpg"
     ></Art>
     <Art
-      title="Mona Lisa"
-      pictureSrc="https://images.unsplash.com/photo-1536924940846-227afb31e2a5"
-      titleTwo="Mona Lisa"
-      pictureSrcTwo="https://images.unsplash.com/photo-1579783902614-a3fb3927b6a5"
+      title="Bicho Parafuso"
+      pictureSrc="https://emuseum.mfah.org/internal/media/dispatcher/300622/preview"
+      titleTwo="Canangula"
+      pictureSrcTwo="https://www.waddingtons.ca/wp-content/uploads/2019/11/85825_1_xl.jpg"
     ></Art>
   </section>
 </template>

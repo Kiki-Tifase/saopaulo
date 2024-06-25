@@ -102,9 +102,11 @@ const hasOneImage = computed(() => {
 
 .sml-img {
   width: 100%;
+  object-fit: cover;
 }
 .big-img {
   max-height: 100%;
   width: 100%;
+  object-fit: cover;
 }
 </style>

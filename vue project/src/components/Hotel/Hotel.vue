@@ -14,12 +14,14 @@ defineProps({
   <article class="hotel-div">
     <img class="hotel-image" :src="imgSrc" />
     <article class="hotel-desc">
-      <h2 class="hotel-text">{{ title }}</h2>
-      <p class="location">{{ location }}</p>
-      <section>
+      <div class="starname">
+        <h2 class="hotel-text1">{{ title }}</h2>
         <article class="stardiv">
           <RatingStars :quantity="rating" />
         </article>
+      </div>
+      <p class="location">{{ location }}</p>
+      <section>
         <p class="hotel-text">
           <slot name="text"></slot>
         </p>
@@ -35,12 +37,15 @@ defineProps({
 </template>
 
 <style scoped>
+* {
+  border: 1px red;
+}
 .hotel-div {
   align-items: center;
-  background-color: beige;
+  background-color: #dde8f4;
   display: flex;
   text-align: center;
-  margin: -20px auto;
+  margin: 45px auto;
   width: 40%;
   height: 550px;
 }
@@ -59,22 +64,33 @@ defineProps({
 
 .hotel-text {
   text-align: left;
-  border-bottom: 2px solid darkgreen;
+  border-bottom: 2px solid #2d7824;
   width: 90%;
-  padding: 10px 2px 15px;
+  padding: 10px 2px 8px;
   margin: 0;
+  color: #23395b;
+}
+
+.hotel-text1 {
+  text-align: left;
+  border-bottom: 2px solid #2d7824;
+  width: 100%;
+  padding: 10px 2px 0px;
+  margin: 0;
+  color: #23395b;
+  line-height: 27px;
 }
 
 .location {
-  width: 110px;
+  width: 45%;
   text-align: left;
-  border-bottom: 2px solid darkgreen;
-  padding: 10px 2px 15px;
+  border-bottom: 2px solid #2d7824;
+  padding: 10px 2px 1px;
   margin: 0;
 }
 
 .price {
-  border-bottom: 2px solid darkgreen;
+  border-bottom: 2px solid #2d7824;
   padding: 8px 1px;
   display: flex;
   justify-content: space-between;
@@ -84,7 +100,7 @@ defineProps({
 
 .price button,
 .price h3 {
-  border-radius: 20px;
+  border-radius: 8px;
   margin: auto 15px;
   padding: auto;
   font-size: 18px;
@@ -95,21 +111,23 @@ defineProps({
 }
 
 .price button {
-  background-color: darkgreen;
+  background-color: #23395b;
   color: white;
   padding: 9px 15px;
 }
 .price button:hover {
-  background-color: red;
+  background-color: #ffef2c;
 }
 
 .stardiv {
   align-items: center;
-  background-color: beige;
   display: flex;
   height: 20px;
-  padding: 5px 0px 10px;
+  padding: 25px 0px 0 60px;
+}
+
+.starname {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
 }
 </style>
-
-<!-- convert art to component system  -->

@@ -17,13 +17,14 @@ defineProps({
 .titles {
   display: flex;
   text-align: center;
-  font-size: 30px;
+  font-size: 55px;
   height: 20px;
-  margin-left: 35px;
+  margin-left: 20px;
+  text-shadow: white 1px 1px 0px;
 }
 
 .links {
-  color: #606c38;
+  color: #23395b;
   text-decoration: none;
 }
 

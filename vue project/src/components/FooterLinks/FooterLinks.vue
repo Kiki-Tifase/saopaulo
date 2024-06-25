@@ -13,12 +13,12 @@ defineProps({
 
 <style scoped>
 .links {
-  color: #003566;
+  color: white;
   display: flex;
   text-align: center;
-  font-size: 60px;
+  font-size: 305%;
   font-style: oblique;
-  text-shadow: rgb(18, 3, 218) 1px 0 5px;
+  text-shadow: #723486 5px 5px 5px;
 }
 
 .links:hover {

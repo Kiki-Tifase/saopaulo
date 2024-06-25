@@ -75,3 +75,8 @@ command option hack w/ up and down arrow
 
 day 11
 how to dynamically bind a url
+
+day 12
+id cannot be used more than once
+use a slot for larger protions of text bcs you can add stylign and it easier tpo see and use a prop for smlalelr bit sof text becaue it is oftne just one word or two
+how to use the object fit tag

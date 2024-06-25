@@ -13,7 +13,7 @@ import NavigationBarMenuItem from '@/components/NavigationBarMenuItem/Navigation
 <style scoped>
 .drop-down-rectangle {
   height: 1720px;
-  background-color: #8ea8c3;
+  background-color: #dde8f4;
   width: 300px;
   position: fixed;
   z-index: 1;
