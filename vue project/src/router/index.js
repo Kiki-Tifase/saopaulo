@@ -4,6 +4,7 @@ import CityView from '../views/CityView.vue'
 import FoodView from '@/views/FoodView.vue'
 import HotelView from '@/views/HotelView.vue'
 import ArtView from '@/views/ArtView.vue'
+import ContactView from '@/views/ContactView.vue'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -37,6 +38,11 @@ const router = createRouter({
       path: '/home',
       name: 'home',
       component: HomeView
+    },
+    {
+      path: '/contact',
+      name: 'contact',
+      component: ContactView
     }
     // {
     //   path: '/about',

@@ -39,6 +39,7 @@ import FooterLinks from '@/components/FooterLinks/FooterLinks.vue'
   font-style: oblique;
   text-shadow: #723486 1px 0 5px;
   width: 70%;
+  margin: auto;
 }
 
 .links:hover {

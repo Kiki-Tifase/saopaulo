@@ -23,7 +23,9 @@ const toggleMenuOpen = () => {
         </a>
       </li>
       <li class="nav-square-left">
-        <h2 class="nav-text-contact">Contact</h2>
+        <a href="/contact">
+          <h2 class="nav-text-contact">Contact</h2>
+        </a>
         <img class="nav-divider icon" src="../../assets/images/mail-512.png" alt="mail" />
         <img class="icon" src="../../assets/images/phone-512.png" alt="phone" />
       </li>

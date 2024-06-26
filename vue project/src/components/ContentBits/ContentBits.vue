@@ -13,7 +13,7 @@ defineProps({
   </article>
 </template>
 
-<style scoped>
+<style>
 .titles {
   display: flex;
   text-align: center;
@@ -29,6 +29,6 @@ defineProps({
 }
 
 .links:hover {
-  color: #ecf39e;
+  color: #723486;
 }
 </style>

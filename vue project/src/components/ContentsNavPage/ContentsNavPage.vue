@@ -8,19 +8,19 @@ import ContentBits from '@/components/ContentBits/ContentBits.vue'
   </section>
   <main class="section-content">
     <section class="grid">
-      <article class="links">
+      <article class="links hover">
         <ContentBits link="/hotel" name="hotel"></ContentBits>
         <figure class="images hotel-section links" alt="Hotel"></figure>
       </article>
-      <article class="links">
+      <article class="links hover">
         <ContentBits link="/art" name="art"></ContentBits>
         <figure class="images art-section links" alt="Hotel"></figure>
       </article>
-      <article class="links">
+      <article class="links hover">
         <ContentBits link="/city" name="city"></ContentBits>
         <figure class="images city-section links" alt="Hotel"></figure>
       </article>
-      <article class="links">
+      <article class="links hover">
         <ContentBits link="/food" name="food"></ContentBits>
         <figure class="images food-section links" alt="Hotel"></figure>
       </article>
@@ -94,14 +94,9 @@ import ContentBits from '@/components/ContentBits/ContentBits.vue'
 }
 
 .links {
-  color: #606c38;
   text-decoration: none;
   margin: 25px 0px;
   font-weight: bolder;
   font-size: 90px;
-}
-
-.links:hover {
-  color: #ecf39e;
 }
 </style>
