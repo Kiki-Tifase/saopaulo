@@ -23,7 +23,7 @@ import CityPopover from '@/components/CityPopover/CityPopover.vue'
     </CityPopover>
     <CityPopover
       class="location2"
-      imgSrc="https://www.smarttravelers.de/wp-content/uploads/2019/03/Simplonpark1.jpg"
+      imgSrc="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6e/Palacio_de_los_deportes_de_Santiago_de_los_Caballeros.jpg/800px-Palacio_de_los_deportes_de_Santiago_de_los_Caballeros.jpg?20110809075409"
       position="top"
     >
       <template #caption>
@@ -35,53 +35,34 @@ import CityPopover from '@/components/CityPopover/CityPopover.vue'
         make it a premier destination for both sports enthusiasts and music fans.
       </template>
     </CityPopover>
-    <button class="dot2" popovertarget="my-popover2"></button>
-    <div popover id="my-popover2">
-      <img
-        class="image"
-        src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6e/Palacio_de_los_deportes_de_Santiago_de_los_Caballeros.jpg/800px-Palacio_de_los_deportes_de_Santiago_de_los_Caballeros.jpg?20110809075409"
-      />
-      <p class="caption">
+    <CityPopover
+      class="location3"
+      imgSrc="https://a.travel-assets.com/findyours-php/viewfinder/images/res40/475000/475684-Boston-City.jpg"
+      position="top"
+    >
+      <template #caption>
         The Palacio de Deportes, located in the heart of Sao Paulo, is a state-of-the-art sports
         arena that has played host to numerous international sporting events, concerts, and other
         entertainment spectacles. With its modern architecture and versatile facilities, the Palacio
         de Deportes offers a dynamic space for athletes and performers alike to showcase their
         talents to audiences from around the world. Its central location and excellent amenities
         make it a premier destination for both sports enthusiasts and music fans.
-      </p>
-    </div>
-    <button class="dot3" popovertarget="my-popover3"></button>
-    <div popover id="my-popover3">
-      <img
-        class="image"
-        src="https://a.travel-assets.com/findyours-php/viewfinder/images/res40/475000/475684-Boston-City.jpg"
-      />
-      <p class="caption">
-        The Jardin Público in Brazil is an enchanting public garden that offers a serene sanctuary
-        amidst the lively urban landscape. With its vibrant array of flora, tranquil ponds, and
-        meandering pathways, the garden provides a captivating escape for visitors to immerse
-        themselves in nature's beauty. The Jardim Público is a cherished destination for locals and
-        tourists alike, offering a peaceful respite and a picturesque backdrop for leisurely strolls
-        and moments of quiet reflection.
-      </p>
-    </div>
-    <button class="dot4" popovertarget="my-popover4"></button>
-    <div popover id="my-popover4">
-      <img
-        class="image"
-        src="https://www.enmilan.net/wp-content/uploads/2019/01/famedio-milan-cementerio.jpeg"
-      />
-      <p class="caption">
-        The Cementerio Monumental in Brazil is a striking and historically significant cemetery that
-        serves as a final resting place for many notable individuals. With its grand mausoleums,
-        elegant sculptures, and meticulously landscaped grounds, the cemetery exudes a sense of
-        solemn beauty and reverence. Visitors can explore the rich architectural and cultural
-        heritage while paying homage to the influential figures laid to rest within its hallowed
-        grounds. The Cementerio Monumental stands as a poignant testament to Brazil's past and the
-        enduring legacies of those who have shaped its history.
-      </p>
-    </div>
-    -->
+      </template>
+    </CityPopover>
+    <CityPopover
+      class="location4"
+      imgSrc="https://www.enmilan.net/wp-content/uploads/2019/01/famedio-milan-cementerio.jpeg"
+      position="top"
+    >
+      <template #caption>
+        The Palacio de Deportes, located in the heart of Sao Paulo, is a state-of-the-art sports
+        arena that has played host to numerous international sporting events, concerts, and other
+        entertainment spectacles. With its modern architecture and versatile facilities, the Palacio
+        de Deportes offers a dynamic space for athletes and performers alike to showcase their
+        talents to audiences from around the world. Its central location and excellent amenities
+        make it a premier destination for both sports enthusiasts and music fans.
+      </template>
+    </CityPopover>
   </section>
 </template>
 
