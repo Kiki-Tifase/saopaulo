@@ -52,7 +52,7 @@ import CityPopover from '@/components/CityPopover/CityPopover.vue'
     <CityPopover
       class="location4"
       imgSrc="https://www.enmilan.net/wp-content/uploads/2019/01/famedio-milan-cementerio.jpeg"
-      position="top"
+      position="bottom-right"
     >
       <template #caption>
         The Palacio de Deportes, located in the heart of Sao Paulo, is a state-of-the-art sports
@@ -94,15 +94,6 @@ import CityPopover from '@/components/CityPopover/CityPopover.vue'
   width: 100%;
 }
 
-/* .dot1,
-.dot2,
-.dot3,
-.dot4 {
-  &:hover {
-    background-color: #dde8f4;
-  }
-} */
-
 .location1 {
   top: 51%;
   right: 55%;
@@ -111,55 +102,17 @@ import CityPopover from '@/components/CityPopover/CityPopover.vue'
 .location2 {
   top: 40%;
   right: 85%;
+  position: absolute;
 }
 .location3 {
   top: 63%;
   right: 22%;
+  position: absolute;
 }
 .location4 {
   top: 6%;
   right: 52%;
-}
-
-/* #my-popover1 {
   position: absolute;
-  top: 59%;
-  left: 25%;
-  width: 30%;
-  border-radius: 10px;
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-} */
-/* add pink border */
-
-#my-popover2 {
-  position: absolute;
-  top: 44%;
-  right: 58%;
-  width: 30%;
-  border-radius: 10px;
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-}
-
-#my-popover3 {
-  position: absolute;
-  top: 35%;
-  left: 62%;
-  width: 30%;
-  border-radius: 10px;
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-}
-
-#my-popover4 {
-  position: absolute;
-  top: 10%;
-  left: 30%;
-  width: 30%;
-  border-radius: 10px;
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
 }
 
 .image {

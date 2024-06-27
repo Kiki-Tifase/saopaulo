@@ -2,6 +2,8 @@
 import { RouterLink } from 'vue-router'
 import NavigationBarMenu from '@/components/NavigationBarMenu/NavigationBarMenu.vue'
 import { ref } from 'vue'
+import Email from '@/components/EmailPopover/Email.vue'
+import WeatherContainer from '@/components/WeatherContainer/WeatherContainer.vue'
 const homeUrl = '/home'
 
 const isMenuOpen = ref(false)
@@ -17,6 +19,7 @@ const toggleMenuOpen = () => {
       <li>
         <button class="nav-square-left nav-text-menu" @click="toggleMenuOpen"><h2>Menu</h2></button>
       </li>
+      <li><WeatherContainer /></li>
       <li class="nav-square-left">
         <a :href="homeUrl">
           <img class="logo" src="../../assets/images/logo.png" alt="logo" />
@@ -26,8 +29,7 @@ const toggleMenuOpen = () => {
         <a href="/contact">
           <h2 class="nav-text-contact">Contact</h2>
         </a>
-        <img class="nav-divider icon" src="../../assets/images/mail-512.png" alt="mail" />
-        <img class="icon" src="../../assets/images/phone-512.png" alt="phone" />
+        <Email />
       </li>
     </ul>
   </nav>
@@ -45,6 +47,12 @@ const toggleMenuOpen = () => {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.location1 {
+  top: 51%;
+  right: 55%;
+  position: absolute;
 }
 
 .nav-text-menu {
@@ -66,6 +74,12 @@ const toggleMenuOpen = () => {
   width: 100%;
 }
 
+.button {
+  width: 130%;
+  height: 130%;
+  background-color: rgb(243, 243, 244, 0);
+  border-color: rgb(243, 243, 244, 0);
+}
 .logo {
   height: 275px;
   margin-top: 40px;
@@ -80,10 +94,5 @@ const toggleMenuOpen = () => {
 .icon {
   height: 70%;
   padding: 15px;
-}
-
-.nav-divider {
-  border-left: black;
-  margin-left: 20px;
 }
 </style>

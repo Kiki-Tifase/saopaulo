@@ -1,6 +1,7 @@
 <script setup>
 import { ref } from 'vue'
-import { positions } from '@/components/CityPopover/Positions.js'
+import { positions } from '@/components/Popover/Positions.js'
+import Popover from '@/components/Popover/Popover.vue'
 
 defineProps({
   imgSrc: String,
@@ -12,23 +13,23 @@ defineProps({
     }
   }
 })
-
-const showPopover = ref(false)
-
-const togglePopover = () => {
-  showPopover.value = !showPopover.value
-}
 </script>
 
 <template>
   <div class="root">
-    <button class="dot" @click="togglePopover" />
-    <figure :class="['figure', position]" v-if="showPopover">
-      <img class="image" :src="imgSrc" />
-      <figcaption class="caption">
-        <slot name="caption"></slot>
-      </figcaption>
-    </figure>
+    <Popover :position="position">
+      <template #trigger>
+        <div class="dot" />
+      </template>
+      <template #content>
+        <figure class="figure">
+          <img class="image" :src="imgSrc" />
+          <figcaption class="caption">
+            <slot name="caption"></slot>
+          </figcaption>
+        </figure>
+      </template>
+    </Popover>
   </div>
 </template>
 
@@ -58,32 +59,9 @@ const togglePopover = () => {
   background-color: white;
   border: 4px solid #f46ac4;
   border-radius: 10px;
-  position: absolute;
   width: 700px;
   padding: 10px;
   gap: 20px;
-
-  &.bottom {
-    top: 40px;
-    left: -350px;
-  }
-  &.top {
-    bottom: 40px;
-    left: -350px;
-  }
-  &.top-left {
-    bottom: 40px;
-    right: 0;
-  }
-  &.top-right {
-    bottom: 40px;
-  }
-  &.bottom-left {
-    right: 0;
-  }
-  &.bottom-right {
-    left: 0;
-  }
 }
 
 .image {

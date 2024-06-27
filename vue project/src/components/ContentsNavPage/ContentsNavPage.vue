@@ -8,22 +8,10 @@ import ContentBits from '@/components/ContentBits/ContentBits.vue'
   </section>
   <main class="section-content">
     <section class="grid">
-      <article class="links hover">
-        <ContentBits link="/hotel" name="hotel"></ContentBits>
-        <figure class="images hotel-section links" alt="Hotel"></figure>
-      </article>
-      <article class="links hover">
-        <ContentBits link="/art" name="art"></ContentBits>
-        <figure class="images art-section links" alt="Hotel"></figure>
-      </article>
-      <article class="links hover">
-        <ContentBits link="/city" name="city"></ContentBits>
-        <figure class="images city-section links" alt="Hotel"></figure>
-      </article>
-      <article class="links hover">
-        <ContentBits link="/food" name="food"></ContentBits>
-        <figure class="images food-section links" alt="Hotel"></figure>
-      </article>
+      <ContentBits link="/art" name="art" theme="hotel"></ContentBits>
+      <ContentBits link="/city" name="city"></ContentBits>
+      <ContentBits link="/hotel" name="hotel"></ContentBits>
+      <ContentBits link="/food" name="food"></ContentBits>
     </section>
   </main>
 </template>
@@ -67,7 +55,6 @@ import ContentBits from '@/components/ContentBits/ContentBits.vue'
 }
 
 .food-section,
-.hotel-section,
 .art-section,
 .city-section {
   background-repeat: no-repeat;
@@ -78,10 +65,6 @@ import ContentBits from '@/components/ContentBits/ContentBits.vue'
 
 .food-section {
   background-image: url('@/assets/images/alex-munsell-auIbTAcSH6E-unsplash.jpg');
-}
-
-.hotel-section {
-  background-image: url('@/assets/images/HOTEL.webp');
 }
 
 .art-section {

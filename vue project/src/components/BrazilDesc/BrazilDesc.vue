@@ -56,7 +56,7 @@
 }
 .descportion2 {
   width: 1200px;
-  margin: 45px 300px 0px 50px;
+  margin: 34px 300px 0px 50px;
 }
 
 .saopaulo {

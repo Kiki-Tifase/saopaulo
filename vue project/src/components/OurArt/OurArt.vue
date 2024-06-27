@@ -39,7 +39,7 @@ import Art from '@/components/Art/Art.vue'
       title="Quipu Menstrual"
       pictureSrc="https://images.saatchiart.com/saatchi/771176/art/2565211/1635131-HSC00001-7.jpg"
       titleTwo="Frente Cultural"
-      pictureSrcTwo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ5Ou-1tiI2BdW0HvhdsJlNALmsE9oICgKF9LfG7RqduJ4iyeKkzOVTXKHPAb3ppU1eXZw&usqp=CAU"
+      pictureSrcTwo="https://www.artforum.com/wp-content/uploads/2023/08/article00_large-63.jpg?w=1000"
     ></Art>
     <Art
       title="Autobiografía"
