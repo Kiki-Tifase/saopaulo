@@ -21,7 +21,7 @@ Sao Paulo Travel is a website that documents the best spots in sao paulo. Sao Pa
 
 Sao Paulo Travel is a website that documents the best spots in sao paulo. Sao Paulo Travel is a website that documents the best spots in sao paulo. Sao Paulo Travel is a website that documents the best spots in sao paulo. Sao Paulo Travel is a website that documents the best spots in sao paulo.
 
-<p align="center"><img width=12.5% src="/Users/ayokiitan.tifase/Documents/GitHub/saopaulo/Screenshot 2024-06-28 at 14.49.30.png"></p>
+<p align="center"><img width=12.5% src="Screenshot 2024-06-28 at 14.49.30.png"></p>
 
 ## Art Page
 
