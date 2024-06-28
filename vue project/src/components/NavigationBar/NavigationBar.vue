@@ -22,7 +22,7 @@ const toggleMenuOpen = () => {
         <a :href="homeUrl">
           <img class="logo" src="../../assets/images/logo.png" alt="logo" />
         </a>
-        <WeatherContainer />
+        <WeatherContainer class="weather" />
       </li>
       <li class="nav-square-left">
         <a href="/contact">
@@ -47,6 +47,7 @@ const toggleMenuOpen = () => {
   left: 90%;
   top: 7%;
 }
+
 #my-popover-phone {
   position: absolute;
   left: 96%;

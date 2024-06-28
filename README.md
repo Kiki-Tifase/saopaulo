@@ -8,7 +8,10 @@ Sao Paulo Travel is a website that documents the best spots in sao paulo. Sao Pa
 
 - [Home Page 1](#home-page)
   - [Navigation Bar](#navigation-bar)
-  - [Contact Form](#contact-form)
+    - [ Drop Down Menu](#drop-down-menu)
+    - [Contact Form](#contact-form)
+    - [Navigation Bar](#navigation-bar)
+    - [Contact Form](#contact-form)
   - [Header Image + Certifications](#header-img-certif)
 - [Home Page 2](#home-page)
   - [Contents](#contents)
@@ -23,8 +26,19 @@ Sao Paulo Travel is a website that documents the best spots in sao paulo. Sao Pa
 
 On my website's home page, I aim to provide easy navigation through the use of a drop-down menu button, a clickable logo, and contact information, all integrated into our navigation bar. Additionally, to enhance the visual appeal of the website, we have included a large header image celebrating and symbolizing Sao Paulo Travel, which is our company's name. Finally, we have incorporated a simple div below the image to showcase the greatness of our company.
 
+## Drop Down Menu[![](https://raw.githubusercontent.com/aregtech/areg-sdk/master/docs/img/pin.svg)](#drop-down-menu)
+
+<p style="text-align: center;">I applied javascript to make a toggle fucntion that could toggle the menu open and closed.</p>
+
+```
+const isMenuOpen = ref(false)
+
+const toggleMenuOpen = () => {
+  isMenuOpen.value = !isMenuOpen.value
+}
+
 <p>
-  <img src="Screenshot 2024-06-28 at 14.49.30.png" width="750" title="hover text">
+  <img src="Screenshot 2024-06-28 at 14.49.30.png" width="900" title="hover text">
 </p>
 
 ## Art Page
@@ -42,3 +56,4 @@ Sao Paulo Travel is a website that documents the best spots in sao paulo. Sao Pa
 ## City Page
 
 Sao Paulo Travel is a website that documents the best spots in sao paulo. Sao Paulo Travel is a website that documents the best spots in sao paulo. Sao Paulo Travel is a website that documents the best spots in sao paulo. Sao Paulo Travel is a website that documents the best spots in sao paulo.
+```
