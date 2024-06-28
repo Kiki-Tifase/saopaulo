@@ -6,23 +6,25 @@ Sao Paulo Travel is a website that documents the best spots in sao paulo. Sao Pa
 
 ## Table of contents[![](https://raw.githubusercontent.com/aregtech/areg-sdk/master/docs/img/pin.svg)](#table-of-contents)
 
+- [Home Page 1](#home-page)
+  - [Navigation Bar](#navigation-bar)
+  - [Contact Form](#contact-form)
+  - [Header Image + Certifications](#header-img-certif)
+- [Home Page 2](#home-page)
+  - [Contents](#contents)
+  - [Footer](#footer)
 - [Motivation](#motivation)
 - [Interface-centricity](#interface-centricity)
 - [More than embedded](#more-than-embedded)
 - [Composition](#composition)
 - [Clone sources](#clone-sources)
-- [Quick build](#quick-build)
-  - [Build with `cmake`](#build-with-cmake)
-  - [Build with `msbuild`](#build-with-msbuild)
-  - [Build with WSL](#build-with-wsl)
-  - [Build with IDEs](#build-with-ides)
 
-## Home Page
+## Home Page [![](https://raw.githubusercontent.com/aregtech/areg-sdk/master/docs/img/pin.svg)](#home-page)
 
-Sao Paulo Travel is a website that documents the best spots in sao paulo. Sao Paulo Travel is a website that documents the best spots in sao paulo. Sao Paulo Travel is a website that documents the best spots in sao paulo. Sao Paulo Travel is a website that documents the best spots in sao paulo.
+On my website's home page, I aim to provide easy navigation through the use of a drop-down menu button, a clickable logo, and contact information, all integrated into our navigation bar. Additionally, to enhance the visual appeal of the website, we have included a large header image celebrating and symbolizing Sao Paulo Travel, which is our company's name. Finally, we have incorporated a simple div below the image to showcase the greatness of our company.
 
 <p>
-  <img src="Screenshot 2024-06-28 at 14.49.30.png" width="550" title="hover text">
+  <img src="Screenshot 2024-06-28 at 14.49.30.png" width="750" title="hover text">
 </p>
 
 ## Art Page
