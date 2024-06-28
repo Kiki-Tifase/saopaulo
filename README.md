@@ -1,9 +1,5 @@
 # Sao Paulo Travel Guide Website
 
-## section 1
-
-textxtetet
-
 ## Table of contents[![](https://raw.githubusercontent.com/aregtech/areg-sdk/master/docs/img/pin.svg)](#table-of-contents)
 
 - [Motivation](#motivation)
@@ -16,3 +12,7 @@ textxtetet
   - [Build with `msbuild`](#build-with-msbuild)
   - [Build with WSL](#build-with-wsl)
   - [Build with IDEs](#build-with-ides)
+
+## Sao Paulo Travel
+
+Sao Paulo Travel is a website that documents the best spots in sao paulo. Sao Paulo Travel is a website that documents the best spots in sao paulo. Sao Paulo Travel is a website that documents the best spots in sao paulo. Sao Paulo Travel is a website that documents the best spots in sao paulo.
