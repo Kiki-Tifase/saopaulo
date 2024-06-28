@@ -3,6 +3,7 @@ import { ref } from 'vue'
 import { positions } from '@/components/Popover/Positions.js'
 
 defineProps({
+  imgSrc: String,
   position: {
     type: String,
     default: 'bottom-right',

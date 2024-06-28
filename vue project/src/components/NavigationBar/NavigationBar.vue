@@ -2,7 +2,6 @@
 import { RouterLink } from 'vue-router'
 import NavigationBarMenu from '@/components/NavigationBarMenu/NavigationBarMenu.vue'
 import { ref } from 'vue'
-import Email from '@/components/EmailPopover/Email.vue'
 import WeatherContainer from '@/components/WeatherContainer/WeatherContainer.vue'
 const homeUrl = '/home'
 
@@ -19,17 +18,23 @@ const toggleMenuOpen = () => {
       <li>
         <button class="nav-square-left nav-text-menu" @click="toggleMenuOpen"><h2>Menu</h2></button>
       </li>
-      <li><WeatherContainer /></li>
       <li class="nav-square-left">
         <a :href="homeUrl">
           <img class="logo" src="../../assets/images/logo.png" alt="logo" />
         </a>
+        <WeatherContainer />
       </li>
       <li class="nav-square-left">
         <a href="/contact">
           <h2 class="nav-text-contact">Contact</h2>
         </a>
-        <Email />
+        <button class="button" popovertarget="my-popover-mail"></button>
+
+        <div popover id="my-popover-mail">saopaulo@gmail.com</div>
+
+        <button class="button2" popovertarget="my-popover-phone"></button>
+
+        <div popover id="my-popover-phone">+2345678236</div>
       </li>
     </ul>
   </nav>
@@ -37,6 +42,16 @@ const toggleMenuOpen = () => {
 </template>
 
 <style scoped>
+#my-popover-mail {
+  position: absolute;
+  left: 90%;
+  top: 7%;
+}
+#my-popover-phone {
+  position: absolute;
+  left: 96%;
+  top: 7%;
+}
 .nav-bar ol {
   list-style-type: none;
 }
@@ -75,10 +90,26 @@ const toggleMenuOpen = () => {
 }
 
 .button {
-  width: 130%;
-  height: 130%;
+  width: 55px;
+  height: 60px;
+  margin: 10px;
   background-color: rgb(243, 243, 244, 0);
   border-color: rgb(243, 243, 244, 0);
+  background-image: url('../../assets/images/phone-512.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.button2 {
+  width: 70px;
+  height: 70px;
+  margin: 10px;
+  position: relative;
+
+  background-color: rgb(243, 243, 244, 0);
+  border-color: rgb(243, 243, 244, 0);
+  background-image: url('../../assets/images/mail-512.png');
+  background-size: contain;
+  background-repeat: no-repeat;
 }
 .logo {
   height: 275px;

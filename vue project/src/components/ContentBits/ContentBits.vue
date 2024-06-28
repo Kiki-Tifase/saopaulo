@@ -80,17 +80,17 @@ defineProps({
   height: 800px;
 }
 
-.food-section,
+.food,
 .hotel,
-.art-section,
-.city-section {
+.art,
+.city {
   background-repeat: no-repeat;
   background-size: cover;
   margin: 0px;
   border-radius: 30px;
 }
 
-.food-section {
+.food {
   background-image: url('@/assets/images/alex-munsell-auIbTAcSH6E-unsplash.jpg');
 }
 
@@ -98,12 +98,12 @@ defineProps({
   background-image: url('@/assets/images/HOTEL.webp');
 }
 
-.art-section {
+.art {
   background-image: url('@/assets/images/ART.webp');
   background-position-y: 50%;
 }
 
-.city-section {
+.city {
   background-image: url('@/assets/images/michael-lechner-19eWcsdzGeE-unsplash.jpg');
 }
 

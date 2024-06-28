@@ -160,18 +160,27 @@ const images9 = [
 
 <template>
   <header>
-    <h1 class="header">Your Food</h1>
+    <h1 class="header">Your Food | Michelin Star Restaurants</h1>
   </header>
   <div class="entry">
     <div class="rest-desc">
       <div>
         <h2 class="name">NOTIÊ</h2>
       </div>
+      <div>
+        <p class="name2">
+          "Notiê is a charming restaurant with a welcoming ambiance. The food is flavorful, the
+          service is top-notch, and the overall experience is delightful. A must-visit for any food
+          enthusiast."
+        </p>
+      </div>
+      <div></div>
       <img
         class="image"
         src="https://media-cdn.tripadvisor.com/media/photo-m/1280/1c/38/dc/0e/cipo-resto-restaurant.jpg"
       />
     </div>
+
     <div class="menu">
       <Slider :images="images" />
       <Slider :images="images2" />
@@ -182,6 +191,13 @@ const images9 = [
     <div class="rest-desc">
       <div>
         <h2 class="name">CUIA</h2>
+      </div>
+      <div>
+        <p class="name2">
+          "Cuia offers a delightful dining experience. The food is delicious, the service is
+          excellent, and the atmosphere is cozy. A great place to enjoy a meal with friends or
+          family."
+        </p>
       </div>
       <img
         class="image"
@@ -198,6 +214,13 @@ const images9 = [
     <div class="rest-desc">
       <div>
         <h2 class="name">JAMILE</h2>
+      </div>
+      <div>
+        <p class="name2">
+          "Jamile offers an exceptional dining experience. The food is delicious, the atmosphere is
+          inviting, and the staff are attentive. A perfect spot for a memorable meal with loved
+          ones."
+        </p>
       </div>
       <img class="image" src="https://www.verdict.co.uk/wp-content/uploads/2018/02/barbecoa.jpg" />
     </div>
@@ -256,5 +279,16 @@ const images9 = [
   top: 7%;
   left: 5%;
   text-align: center;
+}
+.name2 {
+  width: 60%;
+  color: #b33434;
+  font-size: 15px;
+  background-color: #dde8f4;
+  position: absolute;
+  top: 16vw;
+  left: 20vw;
+  text-align: center;
+  border-radius: 5px;
 }
 </style>

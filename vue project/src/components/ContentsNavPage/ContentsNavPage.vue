@@ -8,10 +8,10 @@ import ContentBits from '@/components/ContentBits/ContentBits.vue'
   </section>
   <main class="section-content">
     <section class="grid">
-      <ContentBits link="/art" name="art" theme="hotel"></ContentBits>
-      <ContentBits link="/city" name="city"></ContentBits>
-      <ContentBits link="/hotel" name="hotel"></ContentBits>
-      <ContentBits link="/food" name="food"></ContentBits>
+      <ContentBits link="/art" name="art" theme="art"></ContentBits>
+      <ContentBits link="/city" name="city" theme="city"></ContentBits>
+      <ContentBits link="/hotel" name="hotel" theme="hotel"></ContentBits>
+      <ContentBits link="/food" name="food" theme="food"></ContentBits>
     </section>
   </main>
 </template>
